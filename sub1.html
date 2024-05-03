@@ -1,13 +1,435 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
-  <link href="이미지 파일 경로" rel="icon" type="image/png" sizes="32x32" ><!--파비콘-->
-  <title>브랜드명</title>
+  <link href="./images/favicon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>GAZE</title>
+  <!--내css-->
+  <link rel="stylesheet" href="./css/sub1.css">
+
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
-  
+
+  <!--헤더시작-->
+  <header>
+    <div class="header_in">
+      <a href="./index.html">
+        <img src="./images/sub1/white_logo.png" alt="logo" class="whitelogo">
+        <img src="./images/black_logo.png" alt="logo" class="blacklogo">
+      </a>
+
+      <ul class="nav">
+        <li><a href="./sub2.html">제품</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">새제품</a></li>
+                <li><a href="#" class="sub_title">중고제품</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">카메라</a></li>
+                <li><a href="#">필름 카메라</a></li>
+                <li><a href="#">디지털 카메라</a></li>
+                <li><a href="#">캠코더</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">브랜드</a></li>
+                <li><a href="#">CANON</a></li>
+                <li><a href="#">FUJIFILM</a></li>
+                <li><a href="#">NIKON</a></li>
+                <li><a href="#">SONY</a></li>
+                <li><a href="#">PANASONIC</a></li>
+                <li><a href="#">RICOH</a></li>
+                <li><a href="#">SIGMA</a></li>
+                <li><a href="#">HASSELBLAD</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub1.html" class="on">브랜드 스토리</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">Brand Logo</a></li>
+                <li><a href="#" class="sub_title">Brand Core Value</a></li>
+                <li><a href="#" class="sub_title">Gaze Picture Lab</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub3.html">현상소</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">About Glab</a></li>
+                <li><a href="#">What is Glab</a></li>
+                <li><a href="#">Glab Process</a></li>
+                <li><a href="#">Glab Price</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">접수하기</a></li>
+                <li><a href="#">온라인 접수</a></li>
+                <li><a href="#">오프라인 접수</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub4.html">커뮤니티</a></li>
+      </ul>
+
+      <div class="h_right">
+        <input type="search">
+
+        <!--팝업 검색창-->
+        <div class="popup">
+          <div>
+            <a href="#none" class="close_icon"><img src="./images/closeicon.png" alt="닫기 버튼"></a>
+            <input type="search" class="input_in" placeholder="검색어를 입력하세요.">
+          </div>
+        </div>
+        <!--팝업 검색창-->
+
+        <ul class="nav_right">
+          <li><a href="#">Shop in KR</a></li>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">
+            <img src="./images/sub1/white_bag.png" alt="장바구니 아이콘 화이트" class="white_bag">
+            <img src="./images/sub1/black_bag.png" alt="장바구니 아이콘 블랙" class="black_bag">
+          </a></li>
+        </ul>
+
+
+      </div>
+
+    </div>
+  </header>
+  <!--헤더끝-->
+
+  <!--메인배너-->
+  <div class="mainbanner">
+    <img src="./images/sub1/sub_banner.png" alt="브랜드 스토리 배너" class="sub1banner">
+    <div class="main_txt">
+      <h1 class="m_h1">Realize Yourself <br>
+        Through<br>
+        Your Own Custom Camera</h1>
+      <p class="scrolldown">스크롤 다운</p>
+      <span></span>
+    </div>
+
+
+  </div>
+  <!--메인배너-->
+
+  <!--콘텐츠1 시작-->
+  <div class="logo_wrap">
+    <h1>Brand Logo</h1>
+    <div class="logo_txtbox">
+      <img src="./images/sub1/logobg.png" alt="로고 설명 배경" class="logobg">
+
+      <img src="./images/sub1/eyes.png" alt="eyes 이미지" class="eyes" data-aos="fade-up" data-aos-delay="200">
+      <img src="./images/sub1/wideangle.png" alt="wideangle 이미지" class="wideangle" data-aos="fade-up" data-aos-delay="600">
+      <img src="./images/sub1/flexible.png" alt="flexible 이미지" class="flexible" data-aos="fade-up" data-aos-delay="1000">
+      <img src="./images/sub1/panorama.png" alt="panorama 이미지" class="panorama" data-aos="fade-up" data-aos-delay="1400">
+
+      <img src="./images/sub1/line1.png" alt="점선 라인 이미지1" class="line1" data-aos="fade-up" data-aos-delay="100">
+      <img src="./images/sub1/line2.png" alt="점선 라인 이미지2" class="line2" data-aos="fade-up" data-aos-delay="500">
+      <img src="./images/sub1/line3.png" alt="점선 라인 이미지3" class="line3" data-aos="fade-up" data-aos-delay="900">
+      <img src="./images/sub1/line4.png" alt="점선 라인 이미지4" class="line4" data-aos="fade-up" data-aos-delay="1300">
+
+
+      <img src="./images/sub1/black_logo_brand.png" alt="배경 로고" class="logo2">
+
+      <div class="txt_eyes"  data-aos="fade-up" data-aos-delay="200">
+        <h3 data-aos="fade-up" data-aos-delay="300">Eyes</h3>
+        <p data-aos="fade-up" data-aos-delay="400">우리는 일상에서 우리의 눈으로
+          많은 것을 보고 있습니다. 눈의
+          형태를 로고에 표현했습니다. </p>
+      </div>
+
+
+      <div class="txt_wideangle"  data-aos="fade-up" data-aos-delay="600">
+        <h3 data-aos-delay="700">Wide Angle</h3>
+        <p data-aos="fade-up" data-aos-delay="800">카메라 렌즈의 광각 효과를
+          로고에 적용하여 카메라
+          렌즈를 연상하도록 하였습니다. </p>
+      </div>
+
+
+      <div class="txt_flexible" data-aos="fade-up" data-aos-delay="1000">
+        <h3  data-aos="fade-up" data-aos-delay="1100">Flexible</h3>
+        <p  data-aos="fade-up" data-aos-delay="1200">원형 안에서 변형된 로고는
+          다양한 것들을 유연하게 받아
+          들이고 표현하는 것을 의미합니다.</p>
+      </div>
+
+
+
+      <div class="txt_panorama" data-aos="fade-up" data-aos-delay="1400">
+        <h3 data-aos="fade-up" data-aos-delay="1300">Panorama</h3>
+        <p data-aos="fade-up" data-aos-delay="1400"> 파노라마처럼 흘러가는 기억을
+          다양한 색상으로 비유하여 브랜
+          드의 서브 컬러로 사용했습니다.</p>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+  <!--콘텐츠1 끝-->
+
+
+
+
+  <!--콘텐츠2 시작-->
+  <div class="con2_wrap">
+    <div class="con2_box">
+
+      <h1 data-aos="fade-up">Core Value</h1>
+
+      <ul class="corevalue_box">
+        <li data-aos="fade-up" data-aos-delay="100"><a href="#">
+            <img src="./images/sub1/corevalue1.png" alt="Core Value realize">
+
+            <div class="con2_text" data-aos="fade-up">
+              <h2 data-aos="fade-up" data-aos-delay="100">Realize</h2>
+
+              <p data-aos="fade-up" data-aos-delay="200">사진을 찍으면서 자신의 <br>
+                취향을 찾아갈 수 있습니다. </p>
+            </div>
+          </a></li>
+
+
+        <li data-aos="fade-up" data-aos-delay="200"><a href="#">
+            <img src="./images/sub1/corevalue2.png" alt="Core Value Memorize">
+
+            <div class="con2_text" data-aos="fade-up">
+              <h2 data-aos="fade-up" data-aos-delay="100">Memorize</h2>
+
+              <p data-aos="fade-up" data-aos-delay="200">찰나의 기억이나 소중한 추억을 <br>
+                보존할 수 있습니다. </p>
+            </div>
+          </a>
+        </li>
+
+        <li data-aos="fade-up" data-aos-delay="300"><a href="#">
+            <img src="./images/sub1/corevalue3.png" alt="Core Value Express">
+
+
+            <div class="con2_text" data-aos="fade-up">
+              <h2 data-aos="fade-up" data-aos-delay="100">Express</h2>
+
+              <p data-aos="fade-up" data-aos-delay="200">사진을 찍으면서 자신을 <br>
+                표현할 수 있습니다. </p>
+            </div>
+          </a></li>
+
+      </ul>
+
+    </div>
+
+
+  </div>
+
+  <!--콘텐츠2 끝-->
+
+
+
+  <!--콘텐츠3 시작-->
+
+  <div class="con3_text">
+
+    <p class="con3_p" data-aos="fade-up" data-aos-delay="100">나의 사진 취향을 찾는 여정.</p>
+
+    <h1 class="con3_h1" data-aos="fade-up" data-aos-delay="300">Gaze Picture Lap </h1>
+  </div>
+
+  <div class="con3_wrap">
+
+    <div class="con3_left">
+      <img src="./images/sub1/picturelab_bg3.png" alt="Take a Picture 
+      Right now.">
+      <h3 class="con3_h3">Take a Picture
+        <br> Right now.
+      </h3>
+    </div>
+
+    <div class="con3_right">
+
+      <div class="con3_box" data-aos="fade-up"><!--01-->
+
+        <div class="con3_box_text">
+          <h4 class="purple" data-aos="fade-up" data-aos-delay="100">01</h4>
+          <h3>Consulting</h3>
+          <h5>상담</h5>
+          <p>상담을 통해 내게 맞는 카메라 모델을
+            찾고 구매할 수 있습니다.</p>
+        </div>
+        <img src="./images/sub1/consulting.png" alt="01 consulting">
+      </div><!--01-->
+
+      <div class="con3_box" data-aos="fade-up" data-aos-delay="200"> <!--02-->
+
+        <img src="./images/sub1/various.png" alt="02 various">
+
+        <div class="con3_box_text">
+          <h4 class="blue" data-aos="fade-up" data-aos-delay="300">02</h4>
+          <h3>Various </h3>
+          <h5>다양함</h5>
+          <p>다양한 모델의 카메라들을 직접 보고
+            구매할 수 있습니다.</p>
+        </div>
+
+      </div><!--02-->
+
+      <div class="con3_box" data-aos="fade-up" data-aos-delay="400"><!--03-->
+
+        <div class="con3_box_text">
+          <h4 class="pink" data-aos="fade-up" data-aos-delay="500">03</h4>
+          <h3>Convenient</h3>
+          <h5>편리함</h5>
+          <p>브랜드 자체 현상소에서 사용한 필름을
+            접수하여 빠르게 인화할 수 있습니다. </p>
+        </div>
+
+        <img src="./images/sub1/convenient.png" alt="03 convenient">
+      </div><!--03-->
+
+      <div class="con3_box" data-aos="fade-up" data-aos-delay="600"><!--04-->
+        <img src="./images/sub1/Archiving.png" alt="04 Archiving">
+
+        <div class="con3_box_text">
+          <h4 class="coral" data-aos="fade-up" data-aos-delay="700">04</h4>
+          <h3>Archiving</h3>
+          <h5>저장</h5>
+          <p>인화한 사진과 필름을 자체 제작한 아카이브
+            키트에 담아 추억을 저장할 수 있습니다. </p>
+        </div>
+      </div><!--04-->
+
+    </div>
+
+
+  </div>
+  <p class="bottom_text" data-aos="fade-up" data-aos-delay="100">
+    This Is A Brand For Geeks.
+  </p>
+
+
+  <!--콘텐츠3 끝-->
+
+  <!--푸터-->
+  <footer>
+
+    <div class="footer_in">
+
+      <div class="footer_left">
+        <div class="footer_top">
+          <dl>
+            <dt>고객 서비스</dt>
+            <dd><a href="#">문의</a></dd>
+            <dd><a href="#">배송</a></dd>
+            <dd><a href="#">교환 및 반품</a></dd>
+            <dd><a href="#">주문 조회</a></dd>
+            <dd><a href="#">주문 취소</a></dd>
+          </dl>
+
+          <dl>
+            <dt>법적 고지</dt>
+            <dd><a href="#">공지사항</a></dd>
+            <dd><a href="#">이용약관</a></dd>
+            <dd><a href="#">개인정보처리방침</a></dd>
+            <dd><a href="#">기프트카드 이용약관</a></dd>
+          </dl>
+
+          <dl>
+            <dt>소셜 미디어</dt>
+            <dd><a href="#">카카오톡</a></dd>
+            <dd><a href="#">인스타그램</a></dd>
+            <dd><a href="#">페이스북</a></dd>
+            <dd><a href="#">트위터</a></dd>
+            <dd><a href="#">핀터레스트</a></dd>
+          </dl>
+        </div>
+
+        <div class="footer_bottom">
+          <a href="#"><img src="./images/sub1/footer_logo.png" alt="푸터 로고"></a>
+
+          <p class="footer_p">대표자명: 뇌하진 | 사업자번호: 000-12-345678 | 이메일 문의: cs@studiogaze.com 주소: 부산광역시 중구 중앙대로 26 10층 |
+            대표번호: 1234-5678 <br>
+            COPYRIGHT © GAZE ALL RIGHTS RESERVED.
+          </p>
+
+        </div>
+      </div>
+
+
+      <div class="footer_right">
+        <ul>
+          <li><a href="#"><img src="./images/insta_icon.png" alt="인스타 아이콘"></a></li>
+          <li><a href="#"><img src="./images/twitter_icon.png" alt="트위터 아이콘"></a></li>
+          <li><a href="#"><img src="./images/facebook_icon.png" alt="페이스북 아이콘"></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </footer>
+  <!--푸터 끝-->
+
+  <!--탑버튼-->
+  <a href="#"><img src="./images/sub1/top.png" alt="탑버튼" class="top"></a>
+  <!--탑버튼-->
+
+  <!-- 커서꾸미기 -->
+  <div id="cursor">
+    <div class="cursor__circle"></div>
+  </div>
+
+  <a href="./sub2.html" cursor-class="arrow"></a>
+  <!-- 커서꾸미기 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+
+  <script src="./js/sub1.js"></script>
+
 </body>
+
 </html>

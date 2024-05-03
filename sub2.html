@@ -1,13 +1,782 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
-  <link href="이미지 파일 경로" rel="icon" type="image/png" sizes="32x32" ><!--파비콘-->
-  <title>브랜드명</title>
+  <link href="./images/favicon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>GAZE</title>
+
+  <!--내css-->
+  <link rel="stylesheet" href="./css/sub2.css">
+
+  <!--슬라이드 배너 js-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <!--갤러리 css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
-  
+
+  <!--헤더시작-->
+  <header>
+    <div class="header_in">
+      <a href="index.html"><img src="./images/sub2/black_logo.png" alt="blacklogo" class="headerlogo"></a>
+
+      <ul class="nav">
+        <li><a href="./sub2.html" class="on">제품</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">새제품</a></li>
+                <li><a href="#" class="sub_title">중고제품</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">카메라</a></li>
+                <li><a href="#">필름 카메라</a></li>
+                <li><a href="#">디지털 카메라</a></li>
+                <li><a href="#">캠코더</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">브랜드</a></li>
+                <li><a href="#">CANON</a></li>
+                <li><a href="#">FUJIFILM</a></li>
+                <li><a href="#">NIKON</a></li>
+                <li><a href="#">SONY</a></li>
+                <li><a href="#">PANASONIC</a></li>
+                <li><a href="#">RICOH</a></li>
+                <li><a href="#">SIGMA</a></li>
+                <li><a href="#">HASSELBLAD</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub1.html">브랜드 스토리</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">Brand Logo</a></li>
+                <li><a href="#" class="sub_title">Brand Core Value</a></li>
+                <li><a href="#" class="sub_title">Gaze Picture Lab</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub3.html">현상소</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">About Glab</a></li>
+                <li><a href="#">What is Glab</a></li>
+                <li><a href="#">Glab Process</a></li>
+                <li><a href="#">Glab Price</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">접수하기</a></li>
+                <li><a href="#">온라인 접수</a></li>
+                <li><a href="#">오프라인 접수</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub4.html">커뮤니티</a></li>
+      </ul>
+
+      <div class="h_right">
+        <input type="search">
+
+        <!--팝업 검색창-->
+        <div class="popup">
+          <div>
+            <a href="#none" class="close_icon"><img src="./images/closeicon.png" alt="닫기 버튼"></a>
+            <input type="search" class="input_in" placeholder="검색어를 입력하세요.">
+          </div>
+        </div>
+        <!--팝업 검색창-->
+
+        <ul class="nav_right">
+          <li><a href="#">Shop in KR</a></li>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#"><img src="./images/sub2/bag_icon.png" alt="장바구니 아이콘"></a></li>
+        </ul>
+
+
+      </div>
+
+    </div>
+  </header>
+  <!--헤더끝-->
+
+  <!--메인배너 시작-->
+  <div class="mainbanner">
+    <img src="./images/sub2/sub2mainbanner.png" alt="새로워진 캐논 미러리스를 만나보세요">
+
+    <div class="main_text">
+      <h1>
+        새로워진 <br>
+        캐논 미러리스를 <br>
+        만나보세요
+      </h1>
+
+      <a href="javascript:;" class="btn1">
+        <p>예약 구매하러 가기</p>
+      </a>
+    </div>
+
+
+  </div>
+  <!--메인배너 끝-->
+
+  <!--제품 카테고리 시작-->
+  <div class="caterory_wrap">
+    <div class="category_in">
+      <ul class="category">
+
+        <li><a href="#">
+            <img src="./images/sub2/allview.png" alt="전체보기 아이콘" class="category_on">
+            <p>전체보기</p>
+          </a></li>
+
+
+
+        <li><a href="#">
+            <img src="./images/sub2/filmcamera.png" alt="필름 카메라 아이콘" cursor-class="arrow">
+            <p>필름 카메라</p>
+          </a> </li>
+
+
+
+        <li><a href="#">
+            <img src="./images/sub2/digitalcamera.png" alt="디지털 카메라 아이콘" cursor-class="arrow">
+            <p>디지털 카메라</p>
+          </a></li>
+
+
+
+        <li><a href="#">
+            <img src="./images/sub2/cam.png" alt="캠코더 아이콘" cursor-class="arrow">
+            <p>캠코더</p>
+          </a></li>
+
+
+
+        <li><a href="#">
+            <img src="./images/sub2/film.png" alt="필름 아이콘" cursor-class="arrow">
+            <p>필름</p>
+          </a></li>
+
+
+
+        <li><a href="#">
+            <img src="./images/sub2/lens.png" alt="렌즈 아이콘" cursor-class="arrow">
+            <p>렌즈</p>
+          </a></li>
+
+
+      </ul>
+    </div>
+
+  </div>
+  <!--제품 카테고리 끝-->
+
+  <!--제품 시작-->
+  <div class="contents">
+
+    <div class="contents_wrap">
+
+      <div class="filter_wrap">
+        <a href="#" class="filter">
+          <img src="./images/sub2/filter.png" alt="필터 아이콘">
+          <p>필터</p>
+        </a>
+      </div>
+
+      <!--필름 카메라 시작-->
+      <div class="con_text">
+
+        <p>전체보기 &gt; 필름카메라 (30)</p>
+
+        <div class="vm">
+          <a href="./sub2.html" cursor-class="arrow">
+            <p>더보기</p>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="con_camera">
+        <ul class="filmcamera">
+
+          <li class="btn2"><a href="#">
+              <img src="./images/sub2/filmcamera01_black.png" alt="카메라 제품 사진1" class="cameraimg">
+              <h4>Leica M11 - P</h4>
+              <p>새제품</p>
+
+              <p class="p_price">14,280,000</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+          <li class="btn2"><a href="#">
+              <img src="./images/sub2/filmcamera02.png" alt="카메라 제품 사진2" class="cameraimg">
+              <h4>Leica Z2X</h4>
+              <p>중고 제품 [B+]</p>
+
+              <p class="p_price">580,000</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+          <li class="btn2"><a href="#">
+              <img src="./images/sub2/filmcamera03.png" alt="카메라 제품 사진3" class="cameraimg">
+              <h4>Nikon Zfc + GR1 [확장그립]</h4>
+              <p>새제품</p>
+
+              <p class="p_price">1,100,000</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+          <li class="btn2"><a href="#">
+              <img src="./images/sub2/filmcamera04.png" alt="카메라 제품 사진1" class="cameraimg">
+              <h4>Canon PowerShot D30</h4>
+              <p>중고 제품 [A-]</p>
+
+              <p class="p_price">280,000</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+        </ul>
+      </div>
+      <!--필름 카메라 끝-->
+
+
+      <!--디지털 카메라 시작-->
+      <div class="con_text">
+
+        <p>전체보기 &gt; 디지털 카메라 (27)</p>
+
+        <div class="vm">
+          <a href="./sub2.html" cursor-class="arrow">
+            <p>더보기</p>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="con_camera">
+        <ul class="filmcamera">
+
+          <li class="btn3"><a href="#">
+              <img src="./images/sub2/digital1.png" alt="디지털카메라 제품 사진1" class="cameraimg">
+              <h4>FUJIFILM AV100 12 MP</h4>
+              <p>중고 제품 [A]</p>
+
+              <p class="p_price">297,120</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+          <li class="btn3"><a href="#">
+              <img src="./images/sub2/digital2.png" alt="디지털카메라 제품 사진2" class="cameraimg">
+              <h4>SAMSUNG KENOX Q1</h4>
+              <p>중고 제품 [B-]</p>
+
+              <p class="p_price">130,000</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+          <li class="btn3"><a href="#">
+              <img src="./images/sub2/digital3.png" alt="디지털카메라 제품 사진3" class="cameraimg">
+              <h4>SAMSUNG 레트로</h4>
+              <p>중고 제품 [B]</p>
+
+              <p class="p_price">90,000</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+          <li class="btn3"><a href="#">
+              <img src="./images/sub2/digital4.png" alt="디지털카메라 제품 사진4" class="cameraimg">
+              <h4>SONY DSC - 830</h4>
+              <p>중고 제품 [A-]</p>
+
+              <p class="p_price">497,000</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+        </ul>
+      </div>
+
+      <!--디지털 카메라 끝-->
+
+      <!--광고배너 시작-->
+      <div class="filmbanner">
+        <a href="#"><img src="./images/sub2/event_banner.png" alt=""></a>
+      </div>
+      <!--광고배너 끝-->
+
+      <!--캠코더 시작-->
+      <div class="con_text">
+
+        <p>전체보기 &gt; 빈티지 캠코더 (18)</p>
+
+        <div class="vm">
+          <a href="./sub2.html" cursor-class="arrow">
+            <p>더보기</p>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="con_camera">
+        <ul class="filmcamera">
+
+          <li class="btn4"><a href="#">
+              <img src="./images/sub2/cam1.png" alt="캠코더 제품 사진1" class="cameraimg">
+              <h4>JVC GZ-MS213</h4>
+              <p>중고 제품 [A]</p>
+
+              <p class="p_price">140,000</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+          <li class="btn4"><a href="#">
+              <img src="./images/sub2/cam2.png" alt="캠코더 제품 사진2" class="cameraimg">
+              <h4>JVC GZ-MG40</h4>
+              <p>중고 제품 [B]</p>
+
+              <p class="p_price">220,000</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+          <li class="btn4"><a href="#">
+              <img src="./images/sub2/cam3.png" alt="캠코더 제품 사진3" class="cameraimg">
+              <h4>JVC GZ-E310</h4>
+              <p>중고 제품 [A-]</p>
+
+              <p class="p_price">195,000</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+          <li class="btn4"><a href="#">
+              <img src="./images/sub2/cam4.png" alt="캠코더 제품 사진4" class="cameraimg">
+              <h4>산요작티 DMX-CS1</h4>
+              <p>중고 제품 [C]</p>
+
+              <p class="p_price">149,000</p>
+
+              <div class="buy_all">
+
+                <a href="#none" class="buy">
+                  구매하기
+                </a>
+
+                <div class="bag_heart">
+                  <a href="#none" class="bag">
+                    <img src="./images/sub2/bag_purple.png" alt="장바구니 아이콘">
+                  </a>
+
+                  <a href="#none" class="heart">
+                    <img src="./images/sub2/heart.png" alt="찜 아이콘">
+                  </a>
+                </div>
+              </div>
+
+            </a> </li>
+
+        </ul>
+      </div>
+      <!--캠코더 끝-->
+
+    </div>
+
+
+
+    <!--고객서비스 시작-->
+    <div class="con2_wrap">
+
+      <div class="con2_top">
+        <!--고객-->
+        <div class="con2_top_in">
+          <img src="./images/sub2/customer.png" alt="고객서비스 배경 이미지">
+        </div>
+
+        <div class="con2_text_box">
+          <h4>Customer Center</h4>
+
+          <div class="con2_text_top">
+            <a href="#"> A/S 신청 </a>
+            <a href="#" class="con2_text_in">필름 카메라 사용법</a>
+          </div>
+
+          <div class="con2_text_top">
+            <a href="#">현상 접수</a>
+            <a href="#" class="con2_text_in_2">프로그램 신청 </a>
+          </div>
+        </div>
+        <!--고객-->
+
+        <!--배송-->
+        <div class="con2_top_in">
+          <img src="./images/sub2/delivery.png" alt="배송 배경 이미지">
+        </div>
+
+        <div class="con2_text_box_2">
+          <h4>무료 배송 서비스를 받아보세요.</h4>
+
+          <div class="con2_text_top_2">
+            <a href="#">배송 조회 하기</a>
+            <br>
+            <a href="#" class="con2_text_in_3">매장에서 픽업 하기</a>
+          </div>
+
+        </div>
+        <!--배송-->
+      </div>
+
+      <div class="con2_top">
+        <!--멤버십-->
+        <div class="con2_top_in">
+          <img src="./images/sub2/membership.png" alt="멤버십 배경 이미지">
+        </div>
+
+        <div class="con2_text_box">
+          <h4 class="membership_h4">Membership</h4>
+
+          <div class="con2_text_top">
+            <p>게이즈가 처음이신가요? <br>
+              다양한 프로모션, 제품 무료체험 등의 <br>
+              회원 혜택을 받아보세요.
+            </p>
+          </div>
+
+          <div class="con2_text_top">
+            <a href="#" class="join_a">회원가입</a>
+          </div>
+        </div>
+        <!--멤버십-->
+
+        <!--교환-->
+        <div class="con2_top_in">
+          <img src="./images/sub2/refund.png" alt="교환 환불 배경 이미지">
+        </div>
+
+        <div class="con2_text_box_2">
+          <h4>교환 / 반품 서비스를 받아보세요.</h4>
+
+          <div class="con2_text_top_2">
+            <a href="#">교환 신청 하기</a>
+            <br>
+            <a href="#">반품 신청 하기</a>
+          </div>
+
+        </div>
+        <!--교환-->
+      </div>
+
+    </div>
+    <!--고객서비스 끝-->
+
+  </div>
+
+  <!--제품 끝-->
+
+  <!--푸터-->
+  <footer>
+
+    <div class="footer_in">
+
+      <div class="footer_left">
+        <div class="footer_top">
+          <dl>
+            <dt>고객 서비스</dt>
+            <dd><a href="#">문의</a></dd>
+            <dd><a href="#">배송</a></dd>
+            <dd><a href="#">교환 및 반품</a></dd>
+            <dd><a href="#">주문 조회</a></dd>
+            <dd><a href="#">주문 취소</a></dd>
+          </dl>
+
+          <dl>
+            <dt>법적 고지</dt>
+            <dd><a href="#">공지사항</a></dd>
+            <dd><a href="#">이용약관</a></dd>
+            <dd><a href="#">개인정보처리방침</a></dd>
+            <dd><a href="#">기프트카드 이용약관</a></dd>
+          </dl>
+
+          <dl>
+            <dt>소셜 미디어</dt>
+            <dd><a href="#">카카오톡</a></dd>
+            <dd><a href="#">인스타그램</a></dd>
+            <dd><a href="#">페이스북</a></dd>
+            <dd><a href="#">트위터</a></dd>
+            <dd><a href="#">핀터레스트</a></dd>
+          </dl>
+        </div>
+
+        <div class="footer_bottom">
+          <a href="#"><img src="./images/footer_logo.png" alt="푸터 로고" class="f_logo_img"></a>
+
+          <p class="footer_p">대표자명: 뇌하진 | 사업자번호: 000-12-345678 | 이메일 문의: cs@studiogaze.com 주소: 부산광역시 중구 중앙대로 26 10층 |
+            대표번호: 1234-5678 <br>
+            COPYRIGHT © GAZE ALL RIGHTS RESERVED.
+          </p>
+
+        </div>
+      </div>
+
+
+      <div class="footer_right">
+        <ul>
+          <li><a href="#"><img src="./images/insta_icon.png" alt="인스타 아이콘"></a></li>
+          <li><a href="#"><img src="./images/twitter_icon.png" alt="트위터 아이콘"></a></li>
+          <li><a href="#"><img src="./images/facebook_icon.png" alt="페이스북 아이콘"></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!--푸터 끝-->
+
+  <!--탑버튼-->
+  <a href="#"><img src="./images/top.png" alt="탑버튼" class="top"></a>
+  <!--탑버튼-->
+
+
+
+
+
+
+
+
+
+  <!-- 커서꾸미기 -->
+  <div id="cursor">
+    <div class="cursor__circle"></div>
+  </div>
+
+  <a href="./sub2.html" cursor-class="arrow"></a>
+  <!-- 커서꾸미기 -->
+
+
+
+
+
+
+
+
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+
+  <script src="./js/sub2.js"></script>
+
+
+
 </body>
+
 </html>

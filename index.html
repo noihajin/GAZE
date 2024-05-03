@@ -26,7 +26,7 @@
   <!--헤더시작-->
   <header>
     <div class="header_in">
-      <a href="#"><img src="./images/blacklogo.png" alt="logo"></a>
+      <a href="#"><img src="./images/black_logo.png" alt="logo" class="headerlogo"></a>
 
       <ul class="nav">
         <li><a href="./sub2.html">제품</a>
@@ -60,13 +60,47 @@
           </div>
         </li>
 
-        <li><a href="./sub1.html">브랜드 스토리</a></li>
-        <li><a href="./sub3.html">현상소</a></li>
-        <li><a href="./sub4.html">사진전</a></li>
+        <li><a href="./sub1.html">브랜드 스토리</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">Brand Logo</a></li>
+                <li><a href="#" class="sub_title">Brand Core Value</a></li>
+                <li><a href="#" class="sub_title">Gaze Picture Lab</a></li>
+              </ul>
+
+            </div>
+          </div>
+        
+        </li>
+
+        <li><a href="./sub3.html">현상소</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">About Glab</a></li>
+                <li><a href="#">What is Glab</a></li>
+                <li><a href="#">Glab Process</a></li>
+                <li><a href="#">Glab Price</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">접수하기</a></li>
+                <li><a href="#">온라인 접수</a></li>
+                <li><a href="#">오프라인 접수</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li>
+        
+        <li><a href="./sub4.html">커뮤니티</a></li>
       </ul>
 
       <div class="h_right">
-        <input type="search" placeholder="검색어를 입력하세요.">
+        <input type="search">
 
         <!--팝업 검색창-->
         <div class="popup">
@@ -80,7 +114,7 @@
         <ul class="nav_right">
           <li><a href="#">Shop in KR</a></li>
           <li><a href="#">로그인</a></li>
-          <li><a href="#"><img src="./images/bagicon.png" alt="장바구니 아이콘"></a></li>
+          <li><a href="#"><img src="./images/bag_icon.png" alt="장바구니 아이콘"></a></li>
         </ul>
 
 
@@ -100,8 +134,8 @@
         <img src="./images/mainbanner1.png" alt="메인배너1">
         <div class="main_text">
           <h1 class="m1_h1">세상에 없던 <br>빈티지 카메라 편집샵</h1>
-          <a href="./sub1.html">
-            <p>브랜드 스토리 보러 가기</p>
+          <a href="javascript:;" class="btn1" >
+            <p>브랜드 스토리 바로 가기</p>
           </a>
         </div>
       </div>
@@ -111,7 +145,7 @@
         <div class="main_text">
           <h1 class="m2_h1">HOT한 신제품을 <br>만나볼 시간</h1>
           <p class="m2_p">게이즈의 시선에서 엄선된 카메라를 만나보세요.</p>
-          <a href="./sub2.html">
+          <a href="javascript:;" class="btn2">
             <p>자세히 보러 가기</p>
           </a>
         </div>
@@ -123,7 +157,7 @@
         <div class="main_text">
           <h1 class="m2_h1">완전히 새로운 현상<br>게이즈 현상소</h1>
           <p class="m2_p">게이즈에서 보다 자유롭게 현상하세요.</p>
-          <a href="./sub3.html">
+          <a href="javascript:;" class="btn2">
             <p>자세히 보러 가기</p>
           </a>
         </div>
@@ -197,16 +231,16 @@
 
   <!--콘텐츠2 필름 배너 시작-->
 
-  <div class="con2_wrap">
+  <div class="con2_wrap" data-aos="fade-down" data-aos-delay="100">
 
     <div class="con2_img">
       <img src="./images/filmbanner4.png" alt="필름 배너" class="filmbanner">
     </div>
 
     <div class="con2_txt">
-      <p class="film_p1">Gaze Original Film</p>
+      <p class="film_p1" data-aos="fade-up" data-aos-delay="300">Gaze Original Film</p>
 
-      <h1 class="film_h1">Find Your Memories.</h1>
+      <h1 class="film_h1" data-aos="fade-up" data-aos-delay="400">Find Your Memories.</h1>
 
       <h3 class="film_h3">게이즈만의 감성으로 재탄생한 필름.</h3>
       <h2 class="film_h2">Memories GX - 400</h2>
@@ -215,9 +249,9 @@
         Memories GX - 400는 향수를 불러일으키는 <br>
         특유의 빈티지한 색감이 매력적인 필름입니다.</p>
 
-      <a href="#">
-        <p>자세히 보러 가기</p>
-      </a>
+        <a href="javascript:;" class="btn3 ">
+          <p>자세히 보러 가기</p>
+        </a>
     </div>
 
   </div>
@@ -236,22 +270,22 @@
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
-            <a href="#"><img src="./images/film1.png" alt="베스트 카메라1"></a>
+            <a href="#"><img src="./images/film1.png" alt="베스트 필름1"></a>
           </div>
           <div class="swiper-slide">
-            <a href="#"><img src="./images/film2.png" alt="베스트 카메라2"></a>
+            <a href="#"><img src="./images/film2.png" alt="베스트 필름2"></a>
           </div>
           <div class="swiper-slide">
-            <a href="#"><img src="./images/film3.png" alt="베스트 카메라3"></a>
+            <a href="#"><img src="./images/film3.png" alt="베스트 필름3"></a>
           </div>
           <div class="swiper-slide">
-            <a href="#"><img src="./images/film4.png" alt="베스트 카메라4"></a>
+            <a href="#"><img src="./images/film4.png" alt="베스트 필름4"></a>
           </div>
           <div class="swiper-slide">
-            <a href="#"><img src="./images/film5.png" alt="베스트 카메라5"></a>
+            <a href="#"><img src="./images/film5.png" alt="베스트 필름5"></a>
           </div>
           <div class="swiper-slide">
-            <a href="#"><img src="./images/film6.png" alt="베스트 카메라6"></a>
+            <a href="#"><img src="./images/film6.png" alt="베스트 필름6"></a>
           </div>
         </div>
 
@@ -272,7 +306,7 @@
 
   <!--콘텐츠4 시작-->
 
-  <div class="con4_wrap">
+  <div class="con4_wrap" data-aos="fade-down" data-aos-delay="100">
     <img src="./images/picturelabbg.png" alt="게이즈 픽쳐스 랩 이미지">
 
     <div class="con4_txt">
@@ -286,7 +320,8 @@
         필름 카메라를 진단하고 구매, 현상, 나만의 사진집 만들기까지 한번에!
       </p>
 
-      <a href="#" class="con4_a" data-aos="fade-up" data-aos-delay="600">
+
+      <a href="javascript:;" class="btn2">
         <p>자세히 보러 가기</p>
       </a>
 
@@ -312,7 +347,7 @@
         여러분을 초대합니다.
       </p>
 
-      <a href="sub4.html" cursor-class="arrow" class="gallerynext" data-aos="fade-right" data-aos-delay="1100"><img
+      <a href="#" cursor-class="arrow" class="gallerynext" data-aos="fade-right" data-aos-delay="1100"><img
           src="./images/gallery_next.png" alt="갤러리 화살표"></a>
 
 
@@ -411,8 +446,8 @@
           으로 다양한 사진과 카메라에 담긴 이야기를 공유해 주세요!
         </p>
 
-        <a href="#">
-          <p>인스타그램 바로가기</p>
+        <a href="javascript:;" class="btn4">
+          <p>인스타그램 바로 가기</p>
         </a>
       </div>
 
@@ -525,7 +560,7 @@
         </div>
 
         <div class="footer_bottom">
-          <a href="#"><img src="./images/footer_logo.png" alt="푸터 로고"></a>
+          <a href="#"><img src="./images/footer_logo.png" alt="푸터 로고" class="f_logo_img"></a>
 
           <p class="footer_p">대표자명: 뇌하진 | 사업자번호: 000-12-345678 | 이메일 문의: cs@studiogaze.com 주소: 부산광역시 중구 중앙대로 26 10층 |
             대표번호: 1234-5678 <br>
@@ -553,10 +588,8 @@
 
 
   <!--탑버튼-->
-  <a href="#" ><img src="./images/top_3.png" alt="탑버튼" class="top"></a>
+  <a href="#" ><img src="./images/top.png" alt="탑버튼" class="top"></a>
   <!--탑버튼-->
-
-
 
 
 
@@ -569,208 +602,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
 
-  <script>
-    //메인배너 슬라이드
-    $(function () {
-      var swiper = new Swiper('.slide ', {
-        speed: 1500,//버튼을 슬라이드가 넘어가는 시간
-        autoplay: {
-          delay: 2500,//자동으로 넘어가기 전 머무르는 시간
-          disableOnInteraction: false,
-        },
-        //loop: true,//슬라이드 무한반복
-        navigation: {//화살표 버튼
-          nextEl: '.slide .swiper-button-next',
-          prevEl: '.slide .swiper-button-prev',
-        },
-        pagination: {//블릿 버튼
-          el: '.slide .swiper-pagination',
-          clickable: true,
-        },
-      });
-    });
+  <script src="./js/index.js"></script>
 
-
-    // 갤러리
-    $(function () {
-      var swiper = new Swiper('.gallery .gallery_inner ', {
-        slidesPerView: 5,//보여지는 갤러리 수
-        spaceBetween: 35,//갤러리 사이 간격
-        speed: 1500,//버튼을 슬라이드가 넘어가는 시간
-        autoplay: {
-          delay: 2500,//자동으로 넘어가기 전 머무르는 시간
-          disableOnInteraction: false,
-        },
-        loop: true,//슬라이드 무한반복
-        navigation: {//화살표 버튼
-          nextEl: '.gallery .swiper-button-next',
-          prevEl: '.gallery .swiper-button-prev',
-        },
-        pagination: {//블릿 버튼
-          el: '.gallery .swiper-pagination',
-          clickable: true,
-        },
-      });
-    });
-
-    //마우스커서효과
-    const cursor = document.querySelector('#cursor');
-    const cursorCircle = cursor.querySelector('.cursor__circle');
-
-    const mouse = { x: -100, y: -100 }; // mouse pointer's coordinates
-    const pos = { x: 0, y: 0 }; // cursor's coordinates
-    const speed = 0.5; // between 0 and 1
-
-    const updateCoordinates = e => {
-      mouse.x = e.clientX;
-      mouse.y = e.clientY;
-    }
-
-    window.addEventListener('mousemove', updateCoordinates);
-
-    function getAngle(diffX, diffY) {
-      return Math.atan2(diffY, diffX) * 180 / Math.PI;
-    }
-
-    function getSqueeze(diffX, diffY) {
-      const distance = Math.sqrt(
-        Math.pow(diffX, 2) + Math.pow(diffY, 2)
-      );
-      const maxSqueeze = 0.15;
-      const accelerator = 1500;
-      return Math.min(distance / accelerator, maxSqueeze);
-    }
-
-    const updateCursor = () => {
-      const diffX = Math.round(mouse.x - pos.x);
-      const diffY = Math.round(mouse.y - pos.y);
-
-      pos.x += diffX * speed;
-      pos.y += diffY * speed;
-
-      const angle = getAngle(diffX, diffY);
-      const squeeze = getSqueeze(diffX, diffY);
-
-      const scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) + ')';
-      const rotate = 'rotate(' + angle + 'deg)';
-      const translate = 'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
-
-      cursor.style.transform = translate;
-      cursorCircle.style.transform = rotate + scale;
-    };
-
-    function loop() {
-      updateCursor();
-      requestAnimationFrame(loop);
-    }
-
-    requestAnimationFrame(loop);
-
-    const cursorModifiers = document.querySelectorAll('[cursor-class]');
-
-    cursorModifiers.forEach(curosrModifier => {
-      curosrModifier.addEventListener('mouseenter', function () {
-        const className = this.getAttribute('cursor-class');
-        cursor.classList.add(className);
-      });
-
-      curosrModifier.addEventListener('mouseleave', function () {
-        const className = this.getAttribute('cursor-class');
-        cursor.classList.remove(className);
-      });
-    });
-
-    //글자 올라오는 효과
-    $(function () {
-      AOS.init({
-        duration: 1200 //aos 나타나는 속도
-      });
-    });
-
-    //팝업 효과
-    $(function () {
-      $('.exhibition_box li:nth-child(1)').click(function () {
-        $('.exhibition_right img').removeClass('poster_on');
-        $('.exhibition_right img:nth-child(1)').addClass('poster_on');
-      });
-
-      $('.exhibition_box li:nth-child(2)').click(function () {
-        $('.exhibition_right img').removeClass('poster_on');
-        $('.exhibition_right img:nth-child(2)').addClass('poster_on');
-      });
-
-      $('.exhibition_box li:nth-child(3)').click(function () {
-        $('.exhibition_right img').removeClass('poster_on');
-        $('.exhibition_right img:nth-child(3)').addClass('poster_on');
-      });
-
-      $('.exhibition_box li:nth-child(4)').click(function () {
-        $('.exhibition_right img').removeClass('poster_on');
-        $('.exhibition_right img:nth-child(4)').addClass('poster_on');
-      });
-
-      $('.exhibition_box li:nth-child(5)').click(function () {
-        $('.exhibition_right img').removeClass('poster_on');
-        $('.exhibition_right img:nth-child(5)').addClass('poster_on');
-      });
-    });
-
-    //흘러가는 슬라이드 효과
-    $(function () {
-      var swiper = new Swiper('.flowslide_inner ', {
-        slidesPerView: 5,//보여지는 갤러리 수
-        spaceBetween: 10,//갤러리 사이 간격
-        speed: 3000,//버튼을 슬라이드가 넘어가는 시간
-        autoplay: {
-          delay: 0,//자동으로 넘어가기 전 머무르는 시간
-          disableOnInteraction: false,
-        },
-        loop: true,//슬라이드 무한반복
-      });
-
-      $('.flowslide .swiper-slide').on('mouseover', function () {
-        swiper.autoplay.stop();
-      });
-      $('.flowslide .swiper-slide').on('mouseout', function () {
-        swiper.autoplay.start();
-      });
-    });
-
-    //탑버튼 안보이다 보이게
-    $(window).scroll(function () {
-      var height = $(window).scrollTop();
-      if (height > 100) {
-        $('.top').fadeIn();
-      } else {
-        $('.top').fadeOut();
-      }
-    });
-
-    $('.top').click(function () {
-      $('html, body').animate({ scrollTop: 0 }, 400);
-      return false;
-    });
-
-
-    //서브메뉴 슬라이드
-    $('.nav> li').mouseover(function () {
-      $(this).children('.sub').stop().slideDown();
-    });
-    $('.nav> li').mouseout(function () {
-      $(this).children('.sub').stop().slideUp();
-    });
-
-    //팝업 검색창
-    $('.h_right> input').click(function () {
-      $('.popup').fadeIn();//.show();
-      $('.input_in').addClass('search');
-    });
-
-    $('.popup .close_icon').click(function () {
-      $('.popup').fadeOut();//.hide();
-      $('.input_in').removeClass('search');
-    });
-  </script>
 
 </body>
 

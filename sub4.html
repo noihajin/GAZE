@@ -1,13 +1,480 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
-  <link href="이미지 파일 경로" rel="icon" type="image/png" sizes="32x32" ><!--파비콘-->
-  <title>브랜드명</title>
+  <link href="./images/favicon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>GAZE</title>
+
+  <!--내css-->
+  <link rel="stylesheet" href="./css/sub4.css">
+
+  <!--슬라이드 배너 js-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <!--갤러리 css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
+
 <body>
-  
+  <!--헤더시작-->
+  <header>
+    <div class="header_in">
+      <a href="index.html"><img src="./images/sub4/black_logo.png" alt="blacklogo" class="headerlogo"></a>
+
+      <ul class="nav">
+        <li><a href="./sub2.html">제품</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">새제품</a></li>
+                <li><a href="#" class="sub_title">중고제품</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">카메라</a></li>
+                <li><a href="#">필름 카메라</a></li>
+                <li><a href="#">디지털 카메라</a></li>
+                <li><a href="#">캠코더</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">브랜드</a></li>
+                <li><a href="#">CANON</a></li>
+                <li><a href="#">FUJIFILM</a></li>
+                <li><a href="#">NIKON</a></li>
+                <li><a href="#">SONY</a></li>
+                <li><a href="#">PANASONIC</a></li>
+                <li><a href="#">RICOH</a></li>
+                <li><a href="#">SIGMA</a></li>
+                <li><a href="#">HASSELBLAD</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub1.html">브랜드 스토리</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">Brand Logo</a></li>
+                <li><a href="#" class="sub_title">Brand Core Value</a></li>
+                <li><a href="#" class="sub_title">Gaze Picture Lab</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub3.html">현상소</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">About Glab</a></li>
+                <li><a href="#">What is Glab</a></li>
+                <li><a href="#">Glab Process</a></li>
+                <li><a href="#">Glab Price</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">접수하기</a></li>
+                <li><a href="#">온라인 접수</a></li>
+                <li><a href="#">오프라인 접수</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub4.html" class="on">커뮤니티</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">Customer Service</a></li>
+                <li><a href="#" class="sub_title">Gaze Review</a></li>
+                <li><a href="#" class="sub_title">Gaze Magazine</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+        </li>
+      </ul>
+
+      <div class="h_right">
+        <input type="search">
+
+        <!--팝업 검색창-->
+        <div class="popup">
+          <div>
+            <a href="#none" class="close_icon"><img src="./images/closeicon.png" alt="닫기 버튼"></a>
+            <input type="search" class="input_in" placeholder="검색어를 입력하세요.">
+          </div>
+        </div>
+        <!--팝업 검색창-->
+
+        <ul class="nav_right">
+          <li><a href="#">Shop in KR</a></li>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#"><img src="./images/sub4/bag_icon.png" alt="장바구니 아이콘"></a></li>
+        </ul>
+
+      </div>
+
+    </div>
+  </header>
+  <!--헤더끝-->
+
+  <!--메인배너 시작-->
+  <div class="mainbanner">
+    <img src="./images/sub4/mainbanner2.png" alt="게이즈 커뮤니티">
+
+    <div class="main_text">
+      <h1>
+        Gaze Community
+      </h1>
+    </div>
+  </div>
+  <!--메인배너 끝-->
+
+  <!--콘텐츠1 시작-->
+
+  <div class="con1_wrap">
+
+    <div class="con1_text">
+      <p>고객 서비스</p>
+      <h1>Customer Service</h1>
+    </div>
+
+    <!--탭메뉴 시작-->
+    <div class="tapmenu">
+      <ul class="board">
+        <li class="on border1"><a href="#none">F & A</a>
+          <div class="notice">
+            <ul>
+              <li><a href="#"><span>Q</span> 수령하지 않은 현상 필름은 어떻게 처리하나요?</a></li>
+              <li><a href="#"><span>Q</span> 미노광 필름이 무슨 뜻인가요?</a></li>
+              <li><a href="#"><span>Q</span> 택배로도 필름을 보낼 수 있나요?</a></li>
+              <li><a href="#"><span>Q</span> 사진 원본은 어떻게 다운로드 하나요?</a></li>
+              <li><a href="#"><span>Q</span> 닉네임은 어떻게 변경할 수 있나요?</a></li>
+              <li><a href="#"><span>Q</span> 필름 특징과 구매 방법이 궁금합니다.</a></li>
+              <li><a href="#"><span>Q</span> 온라인 인화 주문 방법이 궁금합니다.</a></li>
+              <li class="bordernone"><a href="#"><span>Q</span> SNS 사진 공개 기준을 알고 싶어요.</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li><a href="#none">자주 묻는 질문</a>
+          <div class="notice">
+            <ul>
+              <li><a href="#"><span>Q</span> 오프라인 이용시간을 알고 싶어요.</a></li>
+              <li><a href="#"><span>Q</span> 교환 환불은 언제까지 가능한가요?</a></li>
+              <li><a href="#"><span>Q</span> 배송 기간은 보통 얼마나 걸리나요?</a></li>
+              <li><a href="#"><span>Q</span> 필름 인화 기간은 얼마나 걸리나요?</a></li>
+              <li><a href="#"><span>Q</span> 개인정보를 변경하고 싶어요.</a></li>
+              <li><a href="#"><span>Q</span> 카메라 사용법을 알고 싶어요.</a></li>
+              <li class="bordernone"><a href="#"><span>Q</span> 현상소는 예약제 인가요?.</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="border2"><a href="#none">공지사항</a>
+          <div class="notice">
+            <ul>
+              <li><a href="#"><span>Q</span> 이용약관</a></li>
+              <li><a href="#"><span>Q</span> 개인정보취급방침</a></li>
+              <li><a href="#"><span>Q</span> 필름 접수 안내</a></li>
+              <li><a href="#"><span>Q</span> 교환 환불 안내</a></li>
+              <li class="bordernone"><a href="#"><span>Q</span> 정품 보증 안내</a></li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    <!--탭메뉴 끝-->
+
+    <a href="#" class="con1_a" cursor-class="arrow">글쓰기</a>
+
+
+  </div>
+
+  <!--콘텐츠1 끝-->
+
+
+  <!--콘텐츠2 시작-->
+  <div class="contents2">
+
+    <div class="con2_text">
+      <p data-aos="fade-up" data-aos-delay="100">고객 리뷰</p>
+      <h1 data-aos="fade-up" data-aos-delay="300">Customer Review</h1>
+    </div>
+
+    <div class="con2_wrap">
+
+      <div class="con2_left" data-aos="fade-right" data-aos-delay="400">
+
+        <div class="insta_id"><img src="./images/sub4/insta_pro.png" alt="인스타프로필" class="insta_pro_img"><a
+            href="#">Hajikkkyyy_20</a></div>
+
+        <a href="#">
+          <img src="./images/sub4/review04.png" alt="리뷰1 이미지">
+
+
+          <div class="text_box">
+
+            <h3>캐논 AE - 1</h3>
+            <h5>[빈티지 필름 카메라]</h5>
+            
+
+            <img src="./images/sub4/star_white.png" alt="리뷰 별점" class="starimg">
+
+            <p>평소 카메라에 관심이 많아, 여러 사이트에서 중고 디자털 카메라를 알아 보던 중 게이즈
+              라는 브랜드를 알게 되었습니다. 게이즈에는 갖고 싶었던 카메라 모델이 있었고 무엇보다
+              정품이 보증이 확실하다는 것이 구매까지 이어질 수 있었습니다. … <span>더보기</span></p>
+          </div>
+
+        </a>
+      </div>
+
+
+      <div class="con2_right">
+        <div class="con2_right_top" data-aos="fade-down" data-aos-delay="500">
+          <a href="#" class="con2_right_in">
+            <img src="./images/sub4/review02.png" alt="리뷰2 이미지" class="con2_img">
+
+            <div class="text_box2">
+
+              <h3>캐논 산요 작티!!</h3>
+            <h5>[빈티지 캠코더]</h5>
+
+            <img src="./images/sub4/star_white.png" alt="리뷰 별점" class="starimg2">
+
+
+
+              <p>캠코더가 다시 유행하면서 산요 작티 제품을 찾고 있었는데 … <span>더보기</span></p>
+            </div>
+
+          </a>
+
+
+          <a href="#">
+            <img src="./images/sub4/review03.png" alt="리뷰3 이미지">
+
+            <div class="text_box3">
+
+              <h3>라이카 제품 후기</h3>
+
+              <h5>[필름 카메라]</h5>
+
+              <img src="./images/sub4/star_white.png" alt="리뷰 별점" class="starimg2">
+
+              <p>라이카 제품을 구매하고 싶어 찾아보다가 게이즈에서 ... <span>더보기</span></p>
+            </div>
+          </a>
+        </div>
+
+        <div class="con2_right_bottom" data-aos="fade-up" data-aos-delay="600">
+
+          <a href="#" class="con2_right_in2">
+            <img src="./images/sub4/review01.png" alt="리뷰4 이미지" class="con2_img">
+
+            <div class="text_box4">
+
+              <h3>올림푸스 c-460 Zoom </h3>
+
+              <h5>[빈티지 디지털 카메라]</h5>
+
+              <img src="./images/sub4/star_white.png" alt="리뷰 별점" class="starimg2">
+
+              <p>요즘 다시 디지털 카메라 감성이 유행이라 구매하고 … <span>더보기</span></p>
+            </div>
+          
+          </a>
+
+          <a href="#">
+            <img src="./images/sub4/review05.png" alt="리뷰5 이미지">
+
+            <div class="text_box5">
+
+              <h3>빈티지 필름 카메라 후기입니다. </h3>
+
+              <h5>[필름 카메라]</h5>
+
+              <img src="./images/sub4/star_white.png" alt="리뷰 별점" class="starimg2">
+
+              <p>원래 필름카메라를 좋아해서 모으고 있었는데  … <span>더보기</span></p>
+            </div>
+          
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text_vm"><a href="#" cursor-class="arrow">리뷰 더 보기</a></div>
+  </div>
+
+
+  <!--콘텐츠2 끝-->
+
+
+
+
+  <!--콘텐츠3 시작-->
+  <div class="con3_wrap">
+
+    <div class="con3_text">
+      <p data-aos="fade-up">게이즈 매거진</p>
+      <h1 data-aos="fade-up" data-aos-delay="200">Gaze Magazine</h1>
+
+    </div>
+
+    <div class="con3_top">
+      <img src="./images/sub4/magazine01.png" alt="매거진1 빈티지 카메라의 귀환" data-aos="fade-right" data-aos-delay="300">
+
+      <div class="con3_top_text" data-aos="fade-right" data-aos-delay="400">
+        <h1>빈티지 카메라의 귀환</h1>
+
+        <p>고화질의 휴대폰 사진에 익숙해진 지금, 셀럽들은 빈티지 카메라의
+          매력에 빠져있다. 헐리웃 스타들부터 많은 케이팝 아티스트들까지!
+          <br>
+          <br>
+          특유의 빈티지한 감성을 녹여낼 수 있는 필름 카메라의 매력을 알아
+          보자. 처음이라면 일회용 필름 카메라로 입문해보는 것을 추천한다.
+        </p>
+      </div>
+    </div>
+
+    <div class="con3_bottom">
+
+      <div class="con3_top_text" data-aos="fade-left" data-aos-delay="500">
+
+        <h1>디지털 캠코더의 매력</h1>
+
+        <p>현재 캠코더를 이용한 영상물이 트렌드이다. <br>
+          대표적으로 우리를 Y2K에 열광하게 만든 뉴진스의 ditto 뮤직
+          비디오가 있다. 
+
+          빈티지 캠코더로 촬영한 영상은 우리의 향수를 <br>
+          자극하고 과거의 순간으로 돌아간 듯한 아련한 감성을 선사한다.  
+        </p>      
+      </div>
+
+      <img src="./images/sub4/magazine02.png" alt="매거진2 디지털 캠코더의 매력" data-aos="fade-left" data-aos-delay="600">
+
+    </div>
+
+    <div class="text_vm"><a href="#" cursor-class="arrow">G.매거진 더 보기</a></div>
+
+
+
+
+
+  </div>
+  <!--콘텐츠3 끝-->
+
+
+
+
+
+  <!--푸터-->
+  <footer>
+
+    <div class="footer_in">
+
+      <div class="footer_left">
+        <div class="footer_top">
+          <dl>
+            <dt>고객 서비스</dt>
+            <dd><a href="#">문의</a></dd>
+            <dd><a href="#">배송</a></dd>
+            <dd><a href="#">교환 및 반품</a></dd>
+            <dd><a href="#">주문 조회</a></dd>
+            <dd><a href="#">주문 취소</a></dd>
+          </dl>
+
+          <dl>
+            <dt>법적 고지</dt>
+            <dd><a href="#">공지사항</a></dd>
+            <dd><a href="#">이용약관</a></dd>
+            <dd><a href="#">개인정보처리방침</a></dd>
+            <dd><a href="#">기프트카드 이용약관</a></dd>
+          </dl>
+
+          <dl>
+            <dt>소셜 미디어</dt>
+            <dd><a href="#">카카오톡</a></dd>
+            <dd><a href="#">인스타그램</a></dd>
+            <dd><a href="#">페이스북</a></dd>
+            <dd><a href="#">트위터</a></dd>
+            <dd><a href="#">핀터레스트</a></dd>
+          </dl>
+        </div>
+
+        <div class="footer_bottom">
+          <a href="#"><img src="./images/sub4/footer_logo.png" alt="푸터 로고" class="f_logo_img"></a>
+
+          <p class="footer_p">대표자명: 뇌하진 | 사업자번호: 000-12-345678 | 이메일 문의: cs@studiogaze.com 주소: 부산광역시 중구 중앙대로 26 10층 |
+            대표번호: 1234-5678 <br>
+            COPYRIGHT © GAZE ALL RIGHTS RESERVED.
+          </p>
+
+        </div>
+      </div>
+
+
+      <div class="footer_right">
+        <ul>
+          <li><a href="#"><img src="./images/sub4/insta_icon.png" alt="인스타 아이콘"></a></li>
+          <li><a href="#"><img src="./images/sub4/twitter_icon.png" alt="트위터 아이콘"></a></li>
+          <li><a href="#"><img src="./images/sub4/facebook_icon.png" alt="페이스북 아이콘"></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!--푸터 끝-->
+
+  <!--탑버튼-->
+  <a href="#"><img src="./images/top.png" alt="탑버튼" class="top"></a>
+  <!--탑버튼-->
+
+
+  <!-- 커서꾸미기 -->
+  <div id="cursor">
+    <div class="cursor__circle"></div>
+  </div>
+
+  <a href="./sub2.html" cursor-class="arrow"></a>
+  <!-- 커서꾸미기 -->
+
+
+
+
+
+
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+
+  <script src="./js/sub4.js"></script>
+
 </body>
+
 </html>

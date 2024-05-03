@@ -1,13 +1,605 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
-  <link href="이미지 파일 경로" rel="icon" type="image/png" sizes="32x32" ><!--파비콘-->
-  <title>브랜드명</title>
+  <link href="./images/favicon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+  <title>GAZE</title>
+
+  <!--내css-->
+  <link rel="stylesheet" href="./css/sub3.css">
+
+  <!--슬라이드 배너 js-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <!--갤러리 css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
+
 <body>
-  
+
+  <!--헤더시작-->
+  <header>
+    <div class="header_in">
+      <a href="index.html"><img src="./images/sub2/black_logo.png" alt="blacklogo" class="headerlogo"></a>
+
+      <ul class="nav">
+        <li><a href="./sub2.html">제품</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">새제품</a></li>
+                <li><a href="#" class="sub_title">중고제품</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">카메라</a></li>
+                <li><a href="#">필름 카메라</a></li>
+                <li><a href="#">디지털 카메라</a></li>
+                <li><a href="#">캠코더</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">브랜드</a></li>
+                <li><a href="#">CANON</a></li>
+                <li><a href="#">FUJIFILM</a></li>
+                <li><a href="#">NIKON</a></li>
+                <li><a href="#">SONY</a></li>
+                <li><a href="#">PANASONIC</a></li>
+                <li><a href="#">RICOH</a></li>
+                <li><a href="#">SIGMA</a></li>
+                <li><a href="#">HASSELBLAD</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub1.html">브랜드 스토리</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">Brand Logo</a></li>
+                <li><a href="#" class="sub_title">Brand Core Value</a></li>
+                <li><a href="#" class="sub_title">Gaze Picture Lab</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub3.html" class="on">현상소</a>
+          <div class="sub">
+            <div class="sub_in">
+
+              <ul>
+                <li><a href="#" class="sub_title">About Glab</a></li>
+                <li><a href="#">What is Glab</a></li>
+                <li><a href="#">Glab Process</a></li>
+                <li><a href="#">Glab Price</a></li>
+              </ul>
+
+              <ul>
+                <li><a href="#" class="sub_title">접수하기</a></li>
+                <li><a href="#">온라인 접수</a></li>
+                <li><a href="#">오프라인 접수</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </li>
+
+        <li><a href="./sub4.html">커뮤니티</a></li>
+      </ul>
+
+      <div class="h_right">
+        <input type="search">
+
+        <!--팝업 검색창-->
+        <div class="popup">
+          <div>
+            <a href="#none" class="close_icon"><img src="./images/closeicon.png" alt="닫기 버튼"></a>
+            <input type="search" class="input_in" placeholder="검색어를 입력하세요.">
+          </div>
+        </div>
+        <!--팝업 검색창-->
+
+        <ul class="nav_right">
+          <li><a href="#">Shop in KR</a></li>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#"><img src="./images/sub2/bag_icon.png" alt="장바구니 아이콘"></a></li>
+        </ul>
+
+
+      </div>
+
+    </div>
+  </header>
+  <!--헤더끝-->
+
+  <!--메인배너 시작-->
+  <div class="mainbanner">
+    <img src="./images/sub3/sub3_mainbanner.png" alt="새로워진 캐논 미러리스를 만나보세요">
+
+    <div class="main_text">
+      <h4>Develop A picture At GLAB.</h4>
+      <h1>
+        <span>GLAB</span> 에서 현상의 <br>
+        즐거움을 찾다.
+      </h1>
+
+      <p>게이즈 현상소 그랩입니다. <br>
+        지금 바로 접수해보세요.</p>
+
+    </div>
+  </div>
+  <!--메인배너 끝-->
+
+  <!--콘텐츠1 시작-->
+  <div class="con1_wrap">
+    
+    <video autoplay muted loop playsinline width="1000px" height="560px">
+      <source src="./video/1996398_Waterpaint_Watercolor_Colorful_1920x1080.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="con1_text">
+
+      <h2 data-aos="fade-up">GLAB.</h2>
+      <h3 data-aos="fade-up" data-aos-delay="200">그랩에서 다채로운 <br>
+        현상의 매력을 발견하세요.</h3>
+      <p data-aos="fade-up" data-aos-delay="400">Glab이란 GAZE의 독자적인 현상소로 gaze 와 lab의 합성어 입니다. <br>
+        이곳에서는 사진 전문가들이 접수된 사진을 빠르고 신속하며 최상의 <br>
+        컨디션으로 인화할 수 있습니다.</p>
+
+    </div>
+  </div>
+  <!--콘텐츠1 끝-->
+
+
+  <!--콘텐츠2 시작-->
+  <div class="con2_wrap">
+    <h3 data-aos="fade-up" data-aos-delay="500">지금 그랩에서 현상 해야 하는 이유.</h3>
+
+
+    <ul class="con2_img">
+      <li class="border_on">
+        <div class="imgbox1">
+          <a href="#"><img src="./images/sub3/reason1.png" alt="지금 그랩에서 현상 해야 하는 이유."> </a>
+        </div>
+        <p>그랩은 믿을 수 있는 전문가와 함께 합니다.</p>
+      </li>
+
+      <li class="border_on">
+        <div class="imgbox2">
+          <a href="#"><img src="./images/sub3/reason2.png" alt="지금 그랩에서 현상 해야 하는 이유."> </a>
+        </div>
+        <p>카메라와 필름 특유의 색감을 정확하게 구현합니다.</p>
+      </li>
+
+      <li class="border_on">
+        <div class="imgbox3">
+          <a href="#"><img src="./images/sub3/reason3.png" alt="지금 그랩에서 현상 해야 하는 이유."> </a>
+        </div>
+        <p>간단한 절차로 접수하고 현상할 수 있습니다.</p>
+      </li>
+
+
+    </ul>
+
+
+  </div>
+
+  <!--콘텐츠2 끝-->
+
+  <!--콘텐츠3 시작-->
+  <div class="con3_wrap">
+
+    <div class="con3_text">
+      <p data-aos="fade-up" data-aos-delay="100">믿을 수 있는 그랩 프로세스.</p>
+      <h1 data-aos="fade-up" data-aos-delay="200">Glab Process</h1>
+    </div>
+
+    <div class="con3_in">
+      <ul>
+        <li>
+          <div class="process1" data-aos="fade-up" data-aos-delay="300">
+            <img src="./images/sub3/process1.png" alt="현상 접수" class="process_img">
+
+            <div class="text_box">
+              <h4 data-aos="fade-up" data-aos-delay="600">필름 접수</h4>
+
+              <p>온/오프라인으로
+                필름 접수해 주세요.
+                <br>
+                <br>
+                필름이 도착하면
+                현상 작업이
+                시작됩니다.
+              </p>
+
+              <a href="#none">
+                <h5>접수 바로 가기</h5>
+              </a>
+            </div>
+          </div>
+        </li>
+
+
+        <li class="nextimg"><img src="./images/sub3/next_icon.png" alt="화살표 이미지"></li>
+
+
+        <li>
+          <div class="process2" data-aos="fade-up" data-aos-delay="400">
+            <img src="./images/sub3/process2.png" alt="현상 접수" class="process_img">
+
+            <div class="text_box">
+              <h4 data-aos="fade-up" data-aos-delay="700">필름 현상</h4>
+
+              <p>현상, 정착, 세척, 건조
+                과정을 거쳐 필름에
+                노광(촬영)된 잠상을
+                가시상으로 변환하는
+                작업입니다.
+              </p>
+
+              <a href="#none">
+                <h5>현상 바로 가기</h5>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nextimg"><img src="./images/sub3/next_icon.png" alt="화살표 이미지"></li>
+
+
+        <li>
+
+          <div class="process3" data-aos="fade-up" data-aos-delay="500">
+
+            <img src="./images/sub3/process3.png" alt="현상 접수" class="process_img">
+
+            <div class="text_box">
+              <h4 data-aos="fade-up" data-aos-delay="800">필름 스캔</h4>
+
+              <p>현상된 필름을
+                디지털 이미지 (JPG)
+                사진으로 만드는
+                작업입니다.
+              </p>
+
+              <a href="#none">
+                <h5>스캔 주의사항</h5>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nextimg"><img src="./images/sub3/next_icon.png" alt="화살표 이미지"></li>
+
+
+        <li>
+          <div class="process4" data-aos="fade-up" data-aos-delay="600">
+            <img src="./images/sub3/process4.png" alt="현상 접수" class="process_img">
+
+            <div class="text_box">
+              <h4 data-aos="fade-up" data-aos-delay="900">필름 인화</h4>
+
+              <p> 디지털 이미지(JPG)를
+                인화기를 이용해
+                사진으로 인쇄하는
+                작업입니다.
+              </p>
+
+              <a href="#none">
+                <h5>인화 주의사항</h5>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <h3>Develop a Picture at Glab.</h3>
+    </div>
+
+  </div>
+  <!--콘텐츠3 끝-->
+
+
+  <!--콘텐츠4 시작-->
+  <div class="con4">
+
+    <div class="con4_wrap">
+
+      <div class="con4_text">
+        <p data-aos="fade-up" data-aos-delay="100">현상소 가격 안내</p>
+        <h1 data-aos="fade-up" data-aos-delay="300">Glab Price</h1>
+      </div>
+
+      <div class="table_top">
+        <div class="table1">
+
+          <table>
+            <h3>흑백 필름</h3>
+
+            <tr>
+              <th class="border"></th>
+              <th class="border">35mm</th>
+              <th class="border">120mm</th>
+              <th class="border">110mm</th>
+            </tr>
+            <tr>
+              <th>M</th>
+              <td>￦ 11.5</td>
+              <td>￦ 12.5</td>
+              <td>￦ 17.5</td>
+            </tr>
+            <tr>
+              <th>L</th>
+              <td>￦ 14.5</td>
+              <td>￦ 15.5</td>
+              <td>￦ 20.5</td>
+            </tr>
+
+            <tr>
+              <th>XL</th>
+              <td>￦ 20.5</td>
+              <td>￦ 21.5</td>
+              <td>￦ 23.5</td>
+            </tr>
+          </table>
+
+          <p>XXL 및 TIFF는 개인 문의바랍니다.</p>
+        </div>
+
+        <div class="table1">
+
+          <table>
+            <h3>컬러 필름</h3>
+
+            <tr>
+              <th class="border"></th>
+              <th class="border">35mm</th>
+              <th class="border">120mm</th>
+              <th class="border">110mm</th>
+            </tr>
+            <tr>
+              <th>M</th>
+              <td>￦ 8.5</td>
+              <td>￦ 9.5</td>
+              <td>￦ 14.5</td>
+            </tr>
+            <tr>
+              <th>L</th>
+              <td>￦ 11.5</td>
+              <td>￦ 12.5</td>
+              <td>￦ 17.5</td>
+            </tr>
+
+            <tr>
+              <th>XL</th>
+              <td>￦ 17.5</td>
+              <td>￦ 18.5</td>
+              <td>￦ 20.5</td>
+            </tr>
+          </table>
+
+          <p>XXL 및 TIFF는 개인 문의바랍니다.</p>
+        </div>
+      </div>
+
+      <div class="table_top">
+
+        <div class="table1">
+
+          <table>
+
+            <h3>현상 ONLY</h3>
+
+            <tr>
+              <th class="border"></th>
+              <th class="border">35mm</th>
+              <th class="border">120mm</th>
+              <th class="border">110mm</th>
+            </tr>
+            <tr>
+              <th>Color</th>
+              <td>￦ 4.5</td>
+              <td>￦ 5.5</td>
+              <td>￦ 7.5</td>
+            </tr>
+            <tr>
+              <th>B&W</th>
+              <td>￦ 7.5</td>
+              <td>￦ 7.5</td>
+              <td>￦ 11.5</td>
+            </tr>
+
+            <tr>
+              <th>E-6</th>
+              <td>￦ 9.5</td>
+              <td>￦ 9.5</td>
+              <td>-</td>
+            </tr>
+
+            <tr>
+              <th>ECN-2</th>
+              <td>￦ 11.5</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </table>
+
+          <p></p>
+        </div>
+
+        <div class="table1">
+
+          <table>
+
+            <h3>스캔 ONLY</h3>
+
+            <tr>
+              <th class="border"></th>
+              <th class="border">Strip 기준</th>
+              <th class="border">Cut 기준</th>
+              <th class="border">Roll 기준</th>
+            </tr>
+            <tr>
+              <th>M</th>
+              <td>￦ 1.0 / 1 Strip </td>
+              <td>￦ 1.0 / 1 Cut</td>
+              <td> ￦ 4.5</td>
+            </tr>
+            <tr>
+              <th>L</th>
+              <td>￦ 1.5 / 1 Strip</td>
+              <td>￦ 1.5 / 1 cut</td>
+              <td>￦ 8.5</td>
+            </tr>
+
+            <tr>
+              <th>XL</th>
+              <td>￦ 2.5 / 1 Strip</td>
+              <td>￦ 2.5 / 1 Cut</td>
+              <td>￦ 13.5</td>
+            </tr>
+
+            <tr>
+              <th>퍼포레이션 스캔 <br> only(L)</th>
+              <td>-</td>
+              <td>-</td>
+              <td>￦ 20.0</td>
+            </tr>
+          </table>
+
+          <p></p>
+        </div>
+
+      </div>
+
+      <p class="con4_p">믿을 수 있는 그랩 프로세스</p>
+
+      <div class="onoff">
+
+        <div class="offline">
+          <h2>현장 접수</h2>
+          <a href="#none">
+            <p>위치 확인하기</p>
+          </a>
+        </div>
+
+
+        <div class="online">
+          <h2>온라인 접수</h2>
+          <a href="#none">
+            <p>접수하러 가기</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <!--콘텐츠4 끝-->
+
+  <!--푸터-->
+  <footer>
+
+    <div class="footer_in">
+
+      <div class="footer_left">
+        <div class="footer_top">
+          <dl>
+            <dt>고객 서비스</dt>
+            <dd><a href="#">문의</a></dd>
+            <dd><a href="#">배송</a></dd>
+            <dd><a href="#">교환 및 반품</a></dd>
+            <dd><a href="#">주문 조회</a></dd>
+            <dd><a href="#">주문 취소</a></dd>
+          </dl>
+
+          <dl>
+            <dt>법적 고지</dt>
+            <dd><a href="#">공지사항</a></dd>
+            <dd><a href="#">이용약관</a></dd>
+            <dd><a href="#">개인정보처리방침</a></dd>
+            <dd><a href="#">기프트카드 이용약관</a></dd>
+          </dl>
+
+          <dl>
+            <dt>소셜 미디어</dt>
+            <dd><a href="#">카카오톡</a></dd>
+            <dd><a href="#">인스타그램</a></dd>
+            <dd><a href="#">페이스북</a></dd>
+            <dd><a href="#">트위터</a></dd>
+            <dd><a href="#">핀터레스트</a></dd>
+          </dl>
+        </div>
+
+        <div class="footer_bottom">
+          <a href="#"><img src="./images/footer_logo.png" alt="푸터 로고" class="f_logo_img"></a>
+
+          <p class="footer_p">대표자명: 뇌하진 | 사업자번호: 000-12-345678 | 이메일 문의: cs@studiogaze.com 주소: 부산광역시 중구 중앙대로 26 10층 |
+            대표번호: 1234-5678 <br>
+            COPYRIGHT © GAZE ALL RIGHTS RESERVED.
+          </p>
+
+        </div>
+      </div>
+
+
+      <div class="footer_right">
+        <ul>
+          <li><a href="#"><img src="./images/insta_icon.png" alt="인스타 아이콘"></a></li>
+          <li><a href="#"><img src="./images/twitter_icon.png" alt="트위터 아이콘"></a></li>
+          <li><a href="#"><img src="./images/facebook_icon.png" alt="페이스북 아이콘"></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!--푸터 끝-->
+
+  <!--탑버튼-->
+  <a href="#"><img src="./images/top.png" alt="탑버튼" class="top"></a>
+  <!--탑버튼-->
+
+
+  <!-- 커서꾸미기 -->
+  <div id="cursor">
+    <div class="cursor__circle"></div>
+  </div>
+
+  <a href="./sub2.html" cursor-class="arrow"></a>
+  <!-- 커서꾸미기 -->
+
+
+
+
+
+
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+
+  <script src="./js/sub3.js"></script>
+
+
 </body>
+
 </html>
